@@ -1,0 +1,12 @@
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+.next/
+out/
+build/
+*.tsbuildinfo
+.env.local
+.env.*
+.next/cache
+.next/*
