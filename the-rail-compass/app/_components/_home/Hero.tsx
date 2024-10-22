@@ -12,8 +12,8 @@ const Hero = () => {
           {title.split("").map((char, index) => (
             <span
               key={index}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 0.1}s` }}
+              className="opacity-0 animate-fadeIn"
+              style={{ animationDelay: `${index * 0.1}s`, animationFillMode: 'forwards' }}
             >
               {char === " " ? "\u00A0" : char}
             </span>
@@ -23,8 +23,8 @@ const Hero = () => {
           {subtitle.split("").map((char, index) => (
             <span
               key={index}
-              className="animate-fade-in"
-              style={{ animationDelay: `${index * 0.05}s` }}
+              className="opacity-0 animate-fadeInRight"
+              style={{ animationDelay: `${index * 0.05}s`, animationFillMode: 'forwards' }}
             >
               {char === " " ? "\u00A0" : char}
             </span>
