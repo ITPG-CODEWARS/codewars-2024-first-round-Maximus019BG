@@ -1,3 +1,4 @@
+import Link from "next/link";
 import VideoPlayer from "./VidPlayer";
 
 const Hero = () => {
@@ -30,6 +31,9 @@ const Hero = () => {
             </span>
           ))}
         </p>
+        <button className="z-30 mt-10 bg-teal-800 px-12 text-white py-2 rounded-lg font-semibold hover:bg-teal-900">
+          <Link href="/trains"> Explore Trains </Link> 
+        </button>
       </div>
     </div>
   );

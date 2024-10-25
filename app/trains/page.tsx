@@ -1,9 +1,9 @@
 import React from 'react'
 
-const TGV = () => {
+const Trains = () => {
   return (
     <div>page</div>
   )
 }
 
-export default TGV;
+export default Trains

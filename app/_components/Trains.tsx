@@ -7,13 +7,9 @@ const FamousTrains = () => {
   const router = useRouter();
   const trains = [
     { name: '20th Century Limited', path: '/trains/20th-Century-Limited' },
-    { name: 'Trans-Siberian Express', path: '/trains/Trans-Siberian-Express' },
-    { name: 'Orient Express', path: '/trains/Orient-Express' },
     { name: 'Flying Scotsman', path: '/trains/Flying-Scotsman' },
     { name: 'Golden Arrow', path: '/trains/Golden-Arrow' },
-    { name: 'Blue Train', path: '/trains/Blue-Train' },
     { name: 'Bullet Train', path: '/trains/Bullet-Train' },
-    { name: 'TGV', path: '/trains/TGV' },
     { name: 'Eurostar', path: '/trains/Eurostar' }
   ];
 

@@ -1,7 +1,6 @@
 import React from "react";
 import Cards from "./Cards";
 import AboutUs from "./AboutUs";
-import Trains from "../Trains";
 
 const Main: React.FC = () => {
   return (
@@ -13,9 +12,6 @@ const Main: React.FC = () => {
           </h1>
           <Cards />
         </div>
-      </div>
-      <div className="w-screen h-full pr-2">
-        <Trains />
       </div>
       <div className="w-screen h-full pr-2">
         <AboutUs />
