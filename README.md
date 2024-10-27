@@ -41,7 +41,7 @@ This website showcases the world's best trains, providing detailed information a
     ```
 
 ## Contributing
-We DO NOT welcome contributions!
+We **DO NOT** welcome contributions!
 
 ## License
 This project is licensed under the ***GNU GENERAL PUBLIC LICENSE***

@@ -1,5 +1,5 @@
 import React from "react";
-import Hero from "@/app/_components/_type1/Hero";
+import Hero from "@/app/_components/_trains/Hero";
 import CenturyLimited20 from "@/public/20thCL.jpg";
 import TrainImage1 from "@/public/20th_Century_Limited_north_car_GCT_jeh.jpg";
 import TrainImage2 from "@/public/20th_Century_2.jpg";
