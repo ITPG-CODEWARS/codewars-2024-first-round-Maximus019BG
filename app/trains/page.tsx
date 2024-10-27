@@ -23,7 +23,7 @@ const TrainsPage = () => {
   };
 
   return (
-    <div className="flex flex-col items-center h-full w-full bg-gradient-to-br from-[#061719] via-black to-black">
+    <div className="flex flex-col items-center h-screen w-screen bg-gradient-to-br from-[#061719] via-black to-black">
       <h1 className="text-4xl font-bold mb-8 mt-5 text-white ">Choose a train you would like to see</h1>
       <TrainList trains={trains} onTrainClick={handleTrainClick} />
     </div>

@@ -9,15 +9,15 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ image, title, subtitle }) => {
   return (
     <div className="relative h-screen w-screen overflow-hidden">
-      <Image 
-        src={image} 
-        alt="Background Image" 
-        className="absolute top-0 left-0"
-        layout="fill" 
-        objectFit="cover" 
-        objectPosition="top left"
-        quality={100} 
-      />
+    <Image 
+      src={image} 
+      alt="Background Image" 
+      className="absolute top-0 left-0 w-full h-full object-cover sm:object-top"
+      layout="fill" 
+      objectFit="cover" 
+      objectPosition="center"
+      quality={100} 
+    />
       <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center">
         <h1 className="text-3xl md:text-5xl lg:text-7xl text-white font-bold mb-4">
           {title.split("").map((char, index) => (
