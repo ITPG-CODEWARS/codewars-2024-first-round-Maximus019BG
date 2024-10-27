@@ -1,10 +1,7 @@
 import React, { memo } from "react";
 import TrainCard from "./TrainCard";
+import { TrainListProps } from "../_types/types";
 
-interface TrainListProps {
-  trains: { name: string; path: string; imageUrl: string }[];
-  onTrainClick: (path: string) => void;
-}
 
 const TrainList: React.FC<TrainListProps> = memo(({ trains, onTrainClick }) => {
   return (
