@@ -1,20 +1,12 @@
 import React from 'react';
 import Image from 'next/image';
-
-interface TrainCardProps {
-  name: string;
-  path: string;
-  imageUrl: string;
-  onClick: (path: string) => void;
-}
+import { TrainCardProps } from '../_types/types';
 
 const TrainCard: React.FC<TrainCardProps> = ({ name, path, imageUrl, onClick }) => {
   return (
     <div
-      className="flex flex-col items-center bg-gray-800 text-white text-2xl font-medium mb-4 p-6 rounded-lg "
+      className="flex flex-col items-center bg-gray-800 text-white text-2xl font-medium mb-4 px-6 py-8 rounded-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 "
       onClick={() => onClick(path)}
-      role="button"
-      aria-label={`View details of ${name}`}
     >
       <Image
         src={imageUrl}

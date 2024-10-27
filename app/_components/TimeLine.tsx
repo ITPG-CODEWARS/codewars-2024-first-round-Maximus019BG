@@ -9,12 +9,7 @@ export const Timeline = ({ children }: { children: ReactNode }) => (
   </div>
 );
 
-export const TimelineSection = ({
-  image,
-  title,
-  text,
-  flip,
-}: SectionProps & { flip?: boolean }) => (
+export const TimelineSection = ({ image, title, text, flip }: SectionProps) => (
   <div
     className={`relative flex flex-col md:flex-row ${
       flip ? "md:flex-row-reverse" : "md:flex-row"
@@ -26,12 +21,11 @@ export const TimelineSection = ({
         width={525}
         height={450}
         alt={title}
-        className={`rounded-lg shadow-lg max-w-full ${flip ?'ml-14':''}`}
+        className={`rounded-lg shadow-lg max-w-full ${flip ? "ml-14" : ""}`}
       />
     </div>
     <div className="w-full md:w-1/2 p-6 transform transition-transform duration-300 hover:scale-105">
-      <h1
-        className={`mb-4 text-4xl font-extrabold text-gray-300 ${ flip ? "" : "ml-14" }`}>
+      <h1 className={`mb-4 text-4xl font-extrabold text-gray-300 ${flip ? "" : "ml-14"}`}>
         {title}
       </h1>
       <p className={`text-lg leading-relaxed ${flip ? "" : "ml-14"}`}>{text}</p>

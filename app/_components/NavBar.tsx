@@ -13,7 +13,7 @@ const NavBar = () => {
 
   return (
     <>
-      <div className="flex flex-col md:flex-row bg-gray-800 p-4 shadow-md items-center">
+      <div className="flex flex-col md:flex-row bg-gray-800 p-4 shadow-md items-center overflow-hidden">
         <div className="flex justify-between w-full md:w-auto items-center">
           <button
             className="text-white 2xl:hidden xl:hidden lg:hidden md:hidden"
@@ -22,13 +22,15 @@ const NavBar = () => {
             ☰
           </button>
           <div className="text-white hover:text-gray-400 md:hidden">
-            <Image
-              src={Logo}
-              alt="Logo"
-              width={30}
-              height={30}
-              className="rounded-full"
-            />
+            <Link href="/">
+              <Image
+                src={Logo}
+                alt="Logo"
+                width={30}
+                height={30}
+                className="rounded-full"
+              />
+            </Link>
           </div>
         </div>
         <div className="hidden md:flex flex-1 gap-5 ml-4">
@@ -40,13 +42,15 @@ const NavBar = () => {
           </div>
         </div>
         <div className="hidden md:flex text-white hover:text-gray-400">
-          <Image
-            src={Logo}
-            alt="Logo"
-            width={30}
-            height={30}
-            className="rounded-full"
-          />
+          <Link href="/">
+            <Image
+              src={Logo}
+              alt="Logo"
+              width={30}
+              height={30}
+              className="rounded-full"
+            />
+          </Link>
         </div>
       </div>
       {isMenuOpen && (
