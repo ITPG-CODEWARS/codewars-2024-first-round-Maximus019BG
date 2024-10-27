@@ -7,7 +7,7 @@ import TrainImage3 from "@/public/EuStar3.jpg";
 import { Timeline, TimelineSection } from "@/app/_components/TimeLine";
 import Footer from "@/app/_components/Footer";
 
-const BulletTrain = () => {
+const Eurostar = () => {
   return (
     <div className="min-h-screen text-white overflow-x-hidden">
       <Hero title="Eurostar" image={EuStar} subtitle="Western Europe" />
@@ -41,4 +41,4 @@ const BulletTrain = () => {
   );
 };
 
-export default BulletTrain;
+export default Eurostar;
