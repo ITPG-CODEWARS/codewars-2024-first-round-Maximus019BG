@@ -16,7 +16,7 @@ This website showcases the world's best trains, providing detailed information a
 ## Getting Started
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/rail-compass.git
+    git clone https://github.com/ITPG-CODEWARS/codewars-2024-first-round-Maximus019BG/tree/main
     cd rail-compass
     ```
 
