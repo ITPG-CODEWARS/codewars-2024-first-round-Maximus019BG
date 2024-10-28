@@ -17,7 +17,7 @@ This website showcases the world's best trains, providing detailed information a
 1. **Clone the repository**:
     ```sh
     git clone https://github.com/ITPG-CODEWARS/codewars-2024-first-round-Maximus019BG/tree/main
-    cd rail-compass
+    cd codewars-2024-first-round-Maximus019BG
     ```
 
 2. **Install dependencies**:
