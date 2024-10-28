@@ -6,9 +6,19 @@ import Logo from "@/app/favicon.ico";
 
 const NavBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isMobileDropdownOpen, setIsMobileDropdownOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
+  };
+
+  const toggleDropdown = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const toggleMobileDropdown = () => {
+    setIsMobileDropdownOpen(!isMobileDropdownOpen);
   };
 
   return (
@@ -33,12 +43,41 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-        <div className="hidden md:flex flex-1 gap-5 ml-4">
+        <div className="hidden md:flex flex-1 gap-5 ml-4 -mb-1">
           <div className="text-white hover:text-gray-400">
             <Link href="/">Home</Link>
           </div>
           <div className="text-white hover:text-gray-400">
-            <Link href="/trains">Trains</Link>
+            <button onClick={toggleDropdown} className="flex items-center">
+              Trains{" "}
+              <span className="font-bold font-mono ml-1 -mb-2 ">
+                {isDropdownOpen ? "˄" : "˅"}
+              </span>
+            </button>
+            {isDropdownOpen && (
+              <div className="absolute bg-gray-700 mt-2 rounded shadow-lg">
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains">All Trains</Link>
+                </div>
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains/20th-Century-Limited">
+                    20th Century Limited
+                  </Link>
+                </div>
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains/Flying-Scotsman">Flying Scotsman</Link>
+                </div>
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains/Golden-Arrow">Golden Arrow</Link>
+                </div>
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains/Bullet-Train">Bullet Train</Link>
+                </div>
+                <div className="text-white hover:text-gray-400 p-2">
+                  <Link href="/trains/Eurostar">Eurostar</Link>
+                </div>
+              </div>
+            )}
           </div>
         </div>
         <div className="hidden md:flex text-white hover:text-gray-400">
@@ -64,9 +103,49 @@ const NavBar = () => {
               <Link href="/">Home</Link>
             </div>
             <div className="text-white hover:text-gray-400 mb-4">
-              <Link href="/trains" onClick={toggleMenu}>
-                Trains
-              </Link>
+              <button onClick={toggleMobileDropdown} className="flex items-center">
+                Trains{" "}
+                <span className="font-bold font-mono ml-1 -mb-2  ">
+                  {isMobileDropdownOpen ? "˄" : "˅"}
+                </span>
+              </button>
+              {isMobileDropdownOpen && (
+                <div className="mt-2">
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link href="/trains" onClick={toggleMenu}>
+                      All Trains
+                    </Link>
+                  </div>
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link
+                      href="/trains/20th-Century-Limited"
+                      onClick={toggleMenu}
+                    >
+                      20th Century Limited
+                    </Link>
+                  </div>
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link href="/trains/Flying-Scotsman" onClick={toggleMenu}>
+                      Flying Scotsman
+                    </Link>
+                  </div>
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link href="/trains/Golden-Arrow" onClick={toggleMenu}>
+                      Golden Arrow
+                    </Link>
+                  </div>
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link href="/trains/Bullet-Train" onClick={toggleMenu}>
+                      Bullet Train
+                    </Link>
+                  </div>
+                  <div className="text-white hover:text-gray-400 p-2">
+                    <Link href="/trains/Eurostar" onClick={toggleMenu}>
+                      Eurostar
+                    </Link>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </div>
