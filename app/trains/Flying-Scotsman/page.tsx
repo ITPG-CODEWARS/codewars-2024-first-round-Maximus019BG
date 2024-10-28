@@ -10,7 +10,11 @@ import Footer from "@/app/_components/Footer";
 const FlyingScotsman = () => {
   return (
     <div className="min-h-screen text-white overflow-x-hidden">
-      <Hero title="Flying Scotsman (LNER)" image={FS} subtitle="United Kingdom (UK)" />
+      <Hero
+        title="Flying Scotsman (LNER)"
+        image={FS}
+        subtitle="United Kingdom (UK)"
+      />
       <div className="absolute h-96 w-full -mt-80 bg-gradient-to-b from-[#3330] via-[#080808b9] to-[#080808]" />
       <div className="bg-gradient-to-b from-[#070707] to-[#111111]">
         <div className="container mx-auto p-4 space-y-16">
@@ -18,7 +22,7 @@ const FlyingScotsman = () => {
             <TimelineSection
               image={TrainImage1}
               title="History"
-              text=" Between 1949 and 1952 it wore a BR Express Blue livery, after which it was painted in BR Brunswick Green.[17][18] On 4 June 1950, now under British Railways ownership, Flying Scotsman was allocated to its new base at Leicester Central on the Great Central Railway, running passenger services to and from London Marylebone, London St Pancras, Leicester, Sheffield, and Manchester"
+              text=" Between 1949 and 1952 it wore a BR Express Blue livery, after which it was painted in BR Brunswick Green. On 4 June 1950, now under British Railways ownership, Flying Scotsman was allocated to its new base at Leicester Central on the Great Central Railway, running passenger services to and from London Marylebone, London St Pancras, Leicester, Sheffield, and Manchester"
             />
             <TimelineSection
               image={TrainImage2}

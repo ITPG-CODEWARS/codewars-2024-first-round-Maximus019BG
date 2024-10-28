@@ -18,7 +18,7 @@ const GoldenArrow = () => {
             <TimelineSection
               image={TrainImage1}
               title="History"
-              text="The Flèche d&apos;Or was introduced in 1926 as an all-first-class Pullman service between Paris and Calais. On 15 May 1929, the Southern Railway introduced the equivalent between London Victoria and Dover while simultaneously launching a new first class only ship, the Canterbury, for the ferry crossing.[1] The train usually consisted of 10 British Pullman cars, hauled by one of the Southern Railway's Lord Nelson class locomotives, and took 98 minutes to travel between London and Dover."
+              text="The Flèche d&apos;Or was introduced in 1926 as an all-first-class Pullman service between Paris and Calais. On 15 May 1929, the Southern Railway introduced the equivalent between London Victoria and Dover while simultaneously launching a new first class only ship, the Canterbury, for the ferry crossing. The train usually consisted of 10 British Pullman cars, hauled by one of the Southern Railway's Lord Nelson class locomotives, and took 98 minutes to travel between London and Dover."
             />
             <TimelineSection
               image={TrainImage2}
