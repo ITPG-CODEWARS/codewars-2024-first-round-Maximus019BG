@@ -14,24 +14,33 @@ const TrainsPage = () => {
     {
       name: "20th Century Limited",
       path: "/trains/20th-Century-Limited",
+      smallText: "New York Central Railroad (NYC)",
       imageUrl: CL20th.src,
     },
     {
       name: "Flying Scotsman",
       path: "/trains/Flying-Scotsman",
+      smallText: "LNER Class A3 4472",
       imageUrl: FlyingScotsman.src,
     },
     {
       name: "Golden Arrow",
       path: "/trains/Golden-Arrow",
+      smallText: "Flèche d'Or",
       imageUrl: GoldenArrow.src,
     },
     {
       name: "Bullet Train",
       path: "/trains/Bullet-Train",
+      smallText: "Shinkansen",
       imageUrl: BulletTrain.src,
     },
-    { name: "Eurostar", path: "/trains/Eurostar", imageUrl: Eurostar.src },
+    {
+      name: "Eurostar",
+      path: "/trains/Eurostar",
+      smallText: "Class 373",
+      imageUrl: Eurostar.src,
+    },
   ];
 
   const handleTrainClick = (path: string) => {

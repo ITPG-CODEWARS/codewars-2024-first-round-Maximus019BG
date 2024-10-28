@@ -6,6 +6,7 @@ import TrainImage2 from "@/public/bullet2.jpg";
 import TrainImage3 from "@/public/bullet3.jpg";
 import { Timeline, TimelineSection } from "@/app/_components/TimeLine";
 import Footer from "@/app/_components/Footer";
+import OtherTrains from "@/app/_components/OtherTrains";
 
 const BulletTrain = () => {
   return (
@@ -33,6 +34,7 @@ const BulletTrain = () => {
             />
           </Timeline>
         </div>
+        <OtherTrains />
       </div>
       <div>
         <Footer />

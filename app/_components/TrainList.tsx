@@ -6,11 +6,12 @@ import { TrainListProps } from "../_types/types";
 const TrainList: React.FC<TrainListProps> = memo(({ trains, onTrainClick }) => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 rounded-lg mb-10">
-      {trains.map(({ name, path, imageUrl }, index) => (
+      {trains.map(({ name, path, imageUrl, smallText }, index) => (
         <div key={index}>
           <TrainCard
             name={name}
             path={path}
+            smallText={smallText}
             imageUrl={imageUrl}
             onClick={onTrainClick}
           />

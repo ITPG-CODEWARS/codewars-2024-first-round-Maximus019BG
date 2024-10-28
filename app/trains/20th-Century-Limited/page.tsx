@@ -6,6 +6,7 @@ import TrainImage2 from "@/public/20th_Century_2.jpg";
 import TrainImage3 from "@/public/20th_Century_Limited_cropped.jpg";
 import { Timeline, TimelineSection } from "@/app/_components/TimeLine";
 import Footer from "@/app/_components/Footer";
+import OtherTrains from "@/app/_components/OtherTrains";
 
 const CL20th = () => {
   return (
@@ -37,6 +38,7 @@ const CL20th = () => {
             />
           </Timeline>
         </div>
+        <OtherTrains />
       </div>
       <div>
         <Footer />

@@ -6,6 +6,7 @@ import TrainImage2 from "@/public/EuStar2.jpg";
 import TrainImage3 from "@/public/EuStar3.jpg";
 import { Timeline, TimelineSection } from "@/app/_components/TimeLine";
 import Footer from "@/app/_components/Footer";
+import OtherTrains from "@/app/_components/OtherTrains";
 
 const Eurostar = () => {
   return (
@@ -33,6 +34,7 @@ const Eurostar = () => {
             />
           </Timeline>
         </div>
+        <OtherTrains />
       </div>
       <div>
         <Footer />

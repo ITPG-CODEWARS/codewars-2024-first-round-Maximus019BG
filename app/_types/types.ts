@@ -9,12 +9,13 @@ export interface SectionProps {
   
 export interface TrainCardProps {
     name: string;
+    smallText: string;
     path: string;
     imageUrl: string;
     onClick: (path: string) => void;
 }
 
 export interface TrainListProps {
-    trains: { name: string; path: string; imageUrl: string }[];
+    trains: { name: string; path: string; imageUrl: string, smallText: string }[];
     onTrainClick: (path: string) => void;
 }
