@@ -13,7 +13,7 @@ This website showcases the world's best trains, providing detailed information a
 - **Frontend**: Built with NextJs for a dynamic and responsive user experience.
 - **Styling**: Utilizes Tailwind CSS for efficient and customizable styling.
 
-## Getting Started
+## Getting Started (You need nodejs)
 1. **Clone the repository**:
     ```sh
     git clone https://github.com/ITPG-CODEWARS/codewars-2024-first-round-Maximus019BG.git
