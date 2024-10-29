@@ -19,7 +19,6 @@ export const metadata: Metadata = {
   description: "The Rail Compass is a website for trains.",
 };
 
-//Koito gleda commita da e jiv i zdrav (dido e vinoven)
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>) {
   return (
     <html lang="en">

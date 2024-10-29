@@ -4,10 +4,7 @@ import { useRef, useEffect } from "react";
 const VideoPlayer = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
-  /*Video cut
-   * да дидо знам че мога просто да го обработя
-   * но това е да те тествам дали изобщо четеш кода
-   */
+  /*Video cut*/
   useEffect(() => {
     const video = videoRef.current;
     if (video) {
