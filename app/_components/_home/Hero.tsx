@@ -6,7 +6,7 @@ const Hero = () => {
   const subtitle = "Your ultimate guide to trains around the world.";
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden">
+    <div className="relative h-screen w-screen overflow-hidden z-30">
       <VideoPlayer />
       <div className="absolute top-0 left-0 h-full w-full bg-black bg-opacity-50 flex flex-col justify-center items-center">
         <h1 className="text-3xl md:text-5xl lg:text-7xl text-white font-bold mb-4">

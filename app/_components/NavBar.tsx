@@ -55,7 +55,7 @@ const NavBar = () => {
               </span>
             </button>
             {isDropdownOpen && (
-              <div className="absolute bg-gray-700 mt-2 rounded shadow-lg">
+              <div className="absolute bg-gray-700 mt-2 rounded shadow-lg z-50">
                 <div className="text-white hover:text-gray-400 p-2">
                   <Link href="/trains">All Trains</Link>
                 </div>
@@ -102,7 +102,7 @@ const NavBar = () => {
             <div className="text-white hover:text-gray-400">
               <Link href="/">Home</Link>
             </div>
-            <div className="text-white hover:text-gray-400 mb-4">
+            <div className="text-white hover:text-gray-400 mb-4 mt-2 z-50">
               <button onClick={toggleMobileDropdown} className="flex items-center">
                 Trains{" "}
                 <span className="font-bold font-mono ml-1 -mb-2  ">
@@ -110,7 +110,7 @@ const NavBar = () => {
                 </span>
               </button>
               {isMobileDropdownOpen && (
-                <div className="mt-2">
+                <div className="mt-2 z-50">
                   <div className="text-white hover:text-gray-400 p-2">
                     <Link href="/trains" onClick={toggleMenu}>
                       All Trains
