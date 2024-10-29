@@ -16,16 +16,16 @@ This website showcases the world's best trains, providing detailed information a
 ## Getting Started
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/ITPG-CODEWARS/codewars-2024-first-round-Maximus019BG/tree/main
+    git clone https://github.com/ITPG-CODEWARS/codewars-2024-first-round-Maximus019BG.git
     cd codewars-2024-first-round-Maximus019BG
     ```
 
-2. **Install dependencies**:
+2. **Install dependencies (YOU NEED FORCE)**:
     ```sh
-    npm install
+    npm install --force
     ```
 
-3. **Run the development server**:
+3. **Run the development server (IF Dido or quaestor skip. Made for community standards only!)**:
     ```sh
     npm run dev
     ```
@@ -41,7 +41,9 @@ This website showcases the world's best trains, providing detailed information a
     ```
 
 ## Contributing
-We **DO NOT** welcome contributions!
+We **DO NOT** welcome contributions (its a olympiad after all)!
 
 ## License
 This project is licensed under the ***GNU GENERAL PUBLIC LICENSE***
+
+*xd*
